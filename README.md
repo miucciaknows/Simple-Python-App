@@ -26,7 +26,7 @@ Open your terminal and type the following command:
 
 `git clone https://github.com/miucciaknows/Simple-Python-App.git`
 
-Open your favorite terminal and install the libraries used in this project
+Open your terminal/favorite idle and install the libraries used in this project
 
 -> But first make sure you are in the correct directory path.
 
@@ -53,3 +53,18 @@ To make the request, You can use Insomia or any other software of your choice.
 ![Image 1](./Images/01.png)
 
 ### Using through Docker
+
+Open your terminal/favorite idle and navigate to the correct directory path.
+
+`cd sum/source/rest_api`
+
+And then:
+
+`docker build . -t simple-python-app`
+
+With this command, a build an image was construed in its current folder and using the tag **simple-python-app**
+
+To test your application, run the following command.
+
+`docker run -d -p 8000:8000 simple-python-app`
+
