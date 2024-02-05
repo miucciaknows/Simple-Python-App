@@ -12,13 +12,13 @@
 
 To make a request to this application, simply pass the following request (in JSON format)
 
-"""
-
+```
 {
 	"number1": 10,
 	"number2": 20
 }
-"""
+
+```
 
 #### Using locally 
 
