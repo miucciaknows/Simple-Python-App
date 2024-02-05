@@ -1,7 +1,8 @@
 # Simple Python App
- This simple application just calculates the sum of two numbers through the value of two numbers sent in a request by the user. 
+
+This simple application just calculates the sum of two numbers through the value of two numbers sent in a request by the user. 
  
- The purpose is to use this application as an example of teaching how to create custom extensions on IBM's **Watsonx Assistant**.
+The purpose is to use this application as an example of teaching how to create custom extensions on IBM's **Watsonx Assistant**.
 
 ## Article available with instructions for use on medium through the link
 
@@ -54,7 +55,11 @@ To make the request, You can use Insomia or any other software of your choice.
 
 ### Using through Docker
 
-Open your terminal/favorite idle and navigate to the correct directory path.
+To use Docker, you need to have Docker desktop on your machine.
+-> For more information about Docker, you can refer to the links below:
+- Official Docker documentation (https://docs.docker.com)
+
+Open your terminal and navigate to the correct directory path.
 
 `cd sum/source/rest_api`
 
@@ -66,5 +71,23 @@ With this command, a build an image was construed in its current folder and usin
 
 To test your application, run the following command.
 
-`docker run -d -p 8000:8000 simple-python-app`
+`docker run -d -p 8080:8080 simple-python-app`
+
+******************************************************************************************************************************
+-d command runs the container in decoupled mode (-d), without blocking your terminal.
+
+-p command specifies the ports to be used in the 8080 application on the internal and external port of the container.
+
+******************************************************************************************************************************
+
+![Image 2](./Images/02.png)
+
+Now your application should be available on port 8080 on your localhost.
+
+
+Use http://localhost:8080 with the **sum** route to perform the sum operation: **http://localhost:8080/sum**
+
+And then use Insomia or any other software of your choice to send the request and see the results
+
+![Image 3](./Images/03.png)
 
