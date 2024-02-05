@@ -4,7 +4,7 @@ This simple application just calculates the sum of two numbers through the value
  
 The purpose is to use this application as an example of teaching how to create custom extensions on IBM's **Watsonx Assistant**.
 
-## Article available with instructions for use on medium through the link
+## Article available with instructions for use this Application with Watsonx Assistant 
 
 [https://medium.com/@nathalia.trazzi/getting-started-with-watsonx-assistant-iv-3c7aadb9e598](https://medium.com/@nathalia.trazzi/getting-started-with-watsonx-assistant-ii-b434486470bd)
 
